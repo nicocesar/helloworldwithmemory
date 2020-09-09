@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package helloworld;
+option go_package="github.com/nicocesar/helloworldwithmemory";
+
+service Helloworld {
+	rpc Call(Request) returns (Response) {}
+}
+
+message Request {
+	string name = 1;
+}
+
+message Response {
+	string msg = 1;
+}
