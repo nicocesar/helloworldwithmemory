@@ -10,6 +10,7 @@ func main() {
 	// Create service
 	srv := service.New(
 		service.Name("helloworld"),
+		service.Version("0.1"),
 	)
 
 	// Register Handler
